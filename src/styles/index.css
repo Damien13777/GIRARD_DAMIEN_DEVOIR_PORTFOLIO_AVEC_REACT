@@ -3,6 +3,12 @@
 
 /*creation de variables CSS pour les couleurs et les polices*/
 :root {
-    --font-400: 'Nunito Sans', sans-serif , weight 400;
-    --font-600: 'Nunito Sans', sans-serif , weight 600; 
+    --font-main: 'Nunito Sans', sans-serif;
+    --font-weight-body: 400;
+    --font-weight-heading: 700;
+}
+
+* {
+    font-family: var(--font-main);
+    font-weight: var(--font-weight-body);
 }
