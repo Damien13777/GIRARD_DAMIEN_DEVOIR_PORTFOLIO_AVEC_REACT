@@ -1,0 +1,14 @@
+/*import de la police google Nunito Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/*creation de variables CSS pour les couleurs et les polices*/
+:root {
+    --font-main: 'Nunito Sans', sans-serif;
+    --font-weight-body: 400;
+    --font-weight-heading: 700;
+}
+
+* {
+    font-family: var(--font-main);
+    font-weight: var(--font-weight-body);
+}
