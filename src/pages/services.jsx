@@ -1,6 +1,3 @@
-// pages/home.js - CORRECT
-import React from 'react';
-
 const Services = () => {
   return (
     <div>
