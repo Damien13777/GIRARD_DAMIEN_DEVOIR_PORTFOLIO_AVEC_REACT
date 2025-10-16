@@ -1,4 +1,5 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React from "react";
+import { Link, Route, Routes } from "react-router-dom";
 import "../src/styles/App.css";
 
 //import des pages
@@ -8,21 +9,24 @@ import Legal from "./pages/legal";
 import Portfolio from "./pages/portfolio";
 import Services from "./pages/services";
 
-function App() {
+export default function App() {
   return (
-    <BrowserRouter>
-      <div className="App d-flex flex-column min-vh-100">
-        <h1> Hello World</h1>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/legal" element={<Legal />} />
-        </Routes>
-      </div>
-    </BrowserRouter>
+    <div className="App d-flex flex-column min-vh-100">
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/services">Services</Link>
+        <Link to="/portfolio">Portfolio</Link>
+        <Link to="/contact">Contact</Link>
+        <Link to="/legal">Legal</Link>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/legal" element={<Legal />} />
+      </Routes>
+    </div>
   );
 }
-
-export default App;
