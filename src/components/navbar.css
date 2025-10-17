@@ -1,0 +1,13 @@
+/* style de base pour tout les liens de la navbar*/
+.navbar-dark .navbar-nav .custom-nav-link {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  color: rgba(255, 255, 255, 0.75)
+}
+
+/*style des liens inactifs*/
+.nav-link-inactive {
+  color: ;
+}
