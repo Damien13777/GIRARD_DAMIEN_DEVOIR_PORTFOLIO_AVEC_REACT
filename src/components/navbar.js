@@ -8,7 +8,7 @@ export default function Navigation() {
     <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
       <Container>
         {/*Logo */}
-        <Navbar.Brand as={NavLink} to="/" className="fw-bold">
+        <Navbar.Brand as={NavLink} to="/" className="fw-standard">
           JOHN DOE
         </Navbar.Brand>
 
