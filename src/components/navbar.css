@@ -8,6 +8,35 @@
 }
 
 /*style des liens inactifs*/
-.nav-link-inactive {
-  color: ;
+.navbar-dark .navbar-nav .custom-nav-link:hover{
+  color: rgba(255, 255, 255, 0.9) ;
+}
+
+/*style des liens actifs - avec react router navlink*/
+.navbar-dark .navbar-nav .custom-nav-link.active {
+  color: #007bff;
+  text-decoration: underline;
+  text-decoration-color: #007bff ;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+  font-weight: 700;
+}
+
+/*style des liens actifs au survol*/
+.navbar-dark .navbar-nav .custom-nav-link.active:hover {
+  color: #0056b3;
+}
+
+/*Responsive design pour mobile*/
+@media (max-width: 768px) {
+  .navbar-dark .navbar-nav .custom-nav-link {
+    padding: 0.75rem 0;
+    margin: 0.25rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar-dark .navbar-nav .custom-nav-link.active {
+    border-left: 3px solid #007bff;
+    padding-left: 1rem;
+  }
 }
