@@ -10,6 +10,7 @@ import Portfolio from "./pages/portfolio";
 import Services from "./pages/services";
 
 //import des components
+import Footer from "./components/footer.js";
 import Navigation from "./components/navbar.js";
 
 export default function App() {
@@ -26,6 +27,8 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/legal" element={<Legal />} />
       </Routes>
+
+      <Footer />
     </div>
   );
 }

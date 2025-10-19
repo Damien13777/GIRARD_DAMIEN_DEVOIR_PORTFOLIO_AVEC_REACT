@@ -4,12 +4,15 @@
   font-weight: 400;
   letter-spacing: 0.5px;
   transition: all 0.3s ease;
-  color: var(--bs-navbar-color);
+  color: var(--bs-light);
 }
 
 /*style des liens inactifs*/
-.navbar-dark .navbar-nav .custom-nav-link:hover{
+.navbar-dark .navbar-nav .custom-nav-link:hover {
   color: var(--bs-navbar-hover-color);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
 }
 
 /*style des liens actifs - avec react router navlink*/
@@ -19,7 +22,7 @@
   text-decoration-color: var(--bs-primary);
   text-underline-offset: 4px;
   text-decoration-thickness: 2px;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 /*style des liens actifs au survol*/
@@ -27,12 +30,18 @@
   color: #0056b3;
 }
 
+/*Responsive design pour tablette*/
+@media (min-width: 769px) and (max-width: 992px) {
+  .navbar-dark .navbar-nav .custom-nav-link {
+    font-size: 0.85rem;
+  }
+}
+
 /*Responsive design pour mobile*/
 @media (max-width: 768px) {
   .navbar-dark .navbar-nav .custom-nav-link {
     padding: 0.75rem 0;
     margin: 0.25rem 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .navbar-dark .navbar-nav .custom-nav-link.active {
