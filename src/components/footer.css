@@ -1,0 +1,102 @@
+/* 
+  FOOTER STYLES - Conforme aux contraintes de l'énoncé
+  - Icônes cliquables qui s'éclaircissent au survol (devenir blancs)
+  - Liens externes : nouvel onglet + nofollow
+  - Liens footer : devenir gras au survol
+*/
+
+/* Base footer */
+footer {
+  background-color: var(--bs-dark);
+  color: var(--bs-light);
+  margin-top: auto; /* Pour sticky footer */
+}
+
+/* Titres de colonnes */
+footer h5 {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+/* 
+  ICÔNES RÉSEAUX SOCIAUX 
+  Contrainte : "devenir blancs au survol"
+*/
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icon {
+  color: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.social-icon:hover {
+  color: #ffffff; /* Blanc au survol comme demandé */
+  transform: translateY(-3px);
+}
+
+/* 
+  LIENS FOOTER 
+  Contrainte : "passer en gras au survol"
+*/
+.footer-link {
+  color: var(--bs-light);
+  transition: all 0.3s ease;
+  display: inline-block;
+  font-weight: 400;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+  font-weight: 700; /* Gras au survol */
+  padding-left: 5px; /* Petit décalage pour effet visuel */
+}
+
+/* Effet de déplacement léger au survol */
+.footer-link {
+  transition: transform 0.3s ease;
+}
+
+.footer-link:hover {
+  transform: translateX(3px);
+}
+
+/* Responsive - Mobile */
+@media (max-width: 767.98px) {
+  footer {
+    padding: 2rem 0;
+  }
+
+  footer .col-md-4 {
+    text-align: left;
+    margin-bottom: 2rem;
+    padding-left: 3rem;
+    font-size: 0.8rem;
+  }
+
+  .social-icons {
+    justify-content: left;
+  }
+
+  footer ul {
+    text-align: left;
+  }
+
+  .container {
+    margin-left: 0;
+  }
+}
+
+/* Responsive - Tablette */
+@media (min-width: 768px) and (max-width: 992px) {
+  footer h5 {
+    font-size: 1rem;
+  }
+
+  .footer-link {
+    font-size: 0.9rem;
+  }
+}

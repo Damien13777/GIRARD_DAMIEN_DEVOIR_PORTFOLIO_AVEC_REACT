@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "../src/styles/App.css";
 
 //import des pages
@@ -9,15 +9,15 @@ import Legal from "./pages/legal";
 import Portfolio from "./pages/portfolio";
 import Services from "./pages/services";
 
+//import des components
+import Footer from "./components/footer.js";
+import Navigation from "./components/navbar.js";
+
 export default function App() {
   return (
     <div className="App d-flex flex-column min-vh-100">
       <nav>
-        <Link to="/">Home</Link>
-        <Link to="/services">Services</Link>
-        <Link to="/portfolio">Portfolio</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/legal">Legal</Link>
+        <Navigation />
       </nav>
 
       <Routes>
@@ -27,6 +27,8 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/legal" element={<Legal />} />
       </Routes>
+
+      <Footer />
     </div>
   );
 }
