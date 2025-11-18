@@ -56,7 +56,7 @@ export default function Services() {
       </section>
 
       {/* SECTION SERVICES CARDS */}
-      <section className="services-section py-5 bg-white">
+      <section className="services-section pb-5 pt-0 bg-white">
         <Container>
           <Row className="g-4">
             {services.map((service) => (

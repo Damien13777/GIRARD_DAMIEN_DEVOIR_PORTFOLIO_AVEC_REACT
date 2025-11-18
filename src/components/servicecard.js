@@ -5,7 +5,7 @@ import "./servicecard.css";
 export default function ServiceCard({ icon, title, description }) {
   return (
     <Card className="service-card h-100">
-      <Card.Body className="d-flex flex-column align-items-center text-center p-4">
+      <Card.Body className="d-flex flex-column align-items-center text-center p-3">
         {/* Icône */}
         <div className="service-icon mb-3">
           <i className={`bi ${icon}`}></i>

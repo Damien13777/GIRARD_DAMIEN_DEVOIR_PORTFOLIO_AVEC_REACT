@@ -25,17 +25,13 @@
     margin: 1.5rem auto 0;
   }
   
-  /* ===================================
-     SECTION SERVICES CARDS
-     =================================== */
+  /* SECTION SERVICES CARDS */
   .services-section {
     padding: 4rem 0;
     background-color: #ffffff;
   }
   
-  /* ===================================
-     ZONE IMAGE BANNIÈRE (sous le footer)
-     =================================== */
+  /* ZONE IMAGE BANNIÈRE (sous le footer) */
   .services-banner {
     width: 100%;
     background-color: #f8f9fa;
@@ -48,9 +44,7 @@
     object-fit: cover;
   }
   
-  /* ===================================
-     RESPONSIVE - TABLETTE (≤ 768px)
-     =================================== */
+  /* RESPONSIVE - TABLETTE (≤ 768px) */
   @media (max-width: 768px) {
     .services-hero {
       min-height: 35vh;
@@ -68,11 +62,13 @@
     .services-section {
       padding: 3rem 0;
     }
+
+    .services-hero p::after {
+      width: 7rem;
+    }
   }
   
-  /* ===================================
-     RESPONSIVE - MOBILE (≤ 576px)
-     =================================== */
+  /* RESPONSIVE - MOBILE (≤ 576px) */
   @media (max-width: 576px) {
     .services-hero {
       min-height: 30vh;
