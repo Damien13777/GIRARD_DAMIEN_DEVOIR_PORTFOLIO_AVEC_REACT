@@ -6,7 +6,7 @@
     box-shadow: none;
   }
   
-  /* EFFET HOVER - Fond #efefef + ombre légère */
+  /* EFFET HOVER - Fond #efefef + ombre */
   .service-card:hover {
     background-color: #efefef;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
