@@ -7,7 +7,7 @@ import "./footer.css";
 export default function Footer() {
   return (
     <footer className="bg-dark text-light py-5">
-      <Container>
+      <Container className="footer-container">
         <Row>
           {/* Colonne 1 : Informations personnelles + Réseaux sociaux */}
           <Col md={4} className="mb-4 mb-md-0">
