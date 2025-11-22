@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Card } from "react-bootstrap";
-import "./portfolioCard.css";
+import "./portfoliocard.css";
 
 export default function PortfolioCard({
   image,
@@ -11,7 +11,6 @@ export default function PortfolioCard({
 }) {
   return (
     <Card className="portfolio-card h-100">
-      {/* ✅ ZONE IMAGE - Tu insères ton image ICI */}
       <Card.Img
         variant="top"
         src={image}
@@ -40,7 +39,7 @@ export default function PortfolioCard({
         </Button>
       </Card.Body>
 
-      {/* Technologies (footer de la card) */}
+      {/* footer de la card */}
       <Card.Footer className="portfolio-card-footer text-muted">
         {technologies}
       </Card.Footer>

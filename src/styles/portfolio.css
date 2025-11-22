@@ -1,0 +1,97 @@
+.portfolio-hero {
+  min-height: 40vh;
+}
+
+.portfolio-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.portfolio-hero p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+/* Soulignement bleu sous le sous-titre */
+.portfolio-hero p::after {
+  content: '';
+  display: block;
+  width: 30rem;
+  height: 4px;
+  background-color: var(--bs-primary);
+  margin: 1.5rem auto 0;
+}
+
+/* SECTION portfolio CARDS */
+.portfolio-section {
+  padding: 4rem 0;
+  background-color: #ffffff;
+}
+
+/* ZONE IMAGE BANNIÈRE */
+.portfolio-banner {
+  width: 100%;
+  background-color: #f8f9fa;
+}
+
+.portfolio-banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* RESPONSIVE - TABLETTE (≤ 768px) */
+@media (max-width: 768px) {
+  .portfolio-hero {
+    min-height: 35vh;
+    padding: 3rem 0;
+  }
+  
+  .portfolio-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .portfolio-hero p {
+    font-size: 1rem;
+  }
+  
+  .portfolio-section {
+    padding: 3rem 0;
+  }
+
+  .portfolio-hero p::after {
+    width: 7rem;
+  }
+}
+
+/* RESPONSIVE - MOBILE (≤ 576px) */
+@media (max-width: 576px) {
+  .portfolio-hero {
+    min-height: 30vh;
+    padding: 2rem 0;
+  }
+  
+  .portfolio-hero h1 {
+    font-size: 1.75rem;
+  }
+  
+  .portfolio-hero p {
+    font-size: 0.95rem;
+  }
+  
+  .portfolio-section {
+    padding: 2rem 0;
+  }
+  
+  /* Cards empilées verticalement sur mobile */
+  .portfolio-section .col-sm-12 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .portfolio-section .col-sm-12:last-child {
+    margin-bottom: 0;
+  }
+}

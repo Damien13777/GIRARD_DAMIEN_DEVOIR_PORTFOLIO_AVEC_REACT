@@ -1,6 +1,5 @@
    .services-hero {
     min-height: 40vh;
-    padding: 4rem 0;
   }
   
   .services-hero h1 {
@@ -31,7 +30,7 @@
     background-color: #ffffff;
   }
   
-  /* ZONE IMAGE BANNIÈRE (sous le footer) */
+  /* ZONE IMAGE BANNIÈRE */
   .services-banner {
     width: 100%;
     background-color: #f8f9fa;
