@@ -12,18 +12,17 @@
 /* Titres Hero */
 .hero-section h1 {
   font-size: 6rem;
-  font-weight: 700;
+  font-weight: var(--font-weight-heading);
 }
 
 .hero-section h2 {
   font-size: 4rem;
-  font-weight: 700;
+  font-weight: var(--font-weight-heading);
   color: rgba(255, 255, 255, 0.9);
 }
 
 /* Bouton Hero avec effet hover */
 .btn-hero {
-  font-weight: 400;
   border-radius: 0.375rem;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -41,7 +40,7 @@
 }
 
 .about-section h2 {
-  font-weight: 600;
+  font-weight: var(--font-weight-heading);
   color: var(--bs-dark);
   position: relative;
   padding-bottom: 0.75rem;

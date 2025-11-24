@@ -1,0 +1,88 @@
+/* Accordion item wrapper */
+.legal-accordion-item {
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.legal-accordion-item:not(:last-child) {
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* Accordion header */
+.legal-accordion-header {
+  background-color: transparent;
+}
+
+/* CLOSED accordion header - WHITE background */
+.legal-accordion-header button.collapsed {
+  background-color: #ffffff;
+  color: var(--bs-dark);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1rem 1.25rem;
+  border: none;
+  box-shadow: none;
+  transition: background-color 0.2s ease;
+}
+
+/* OPEN accordion header - BLUE background */
+.legal-accordion-header button:not(.collapsed) {
+  background-color: #d4e3f5;
+  color: var(--bs-dark);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1rem 1.25rem;
+  border: none;
+  box-shadow: none;
+}
+
+/* Hover state for closed accordion */
+.legal-accordion-header button.collapsed:hover {
+  background-color: #f8f9fa;
+}
+
+/* Hover state for open accordion */
+.legal-accordion-header button:not(.collapsed):hover {
+  background-color: #c5d9f0;
+}
+
+/* Focus state */
+.legal-accordion-header button:focus {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+/* Arrow icon */
+.legal-accordion-header button::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  background-size: 1.25rem;
+}
+
+/* Accordion body */
+.legal-accordion-body {
+  padding: 1.5rem 1.25rem;
+  background-color: #ffffff;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #495057;
+}
+
+/* RESPONSIVE */
+@media (max-width: 576px) {
+  .legal-accordion-header button.collapsed,
+  .legal-accordion-header button:not(.collapsed) {
+    font-size: 0.95rem;
+    padding: 0.875rem 1rem;
+  }
+
+  .legal-accordion-body {
+    padding: 1.25rem 1rem;
+    font-size: 0.9rem;
+  }
+}

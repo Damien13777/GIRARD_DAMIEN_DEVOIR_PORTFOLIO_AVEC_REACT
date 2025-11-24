@@ -4,24 +4,21 @@
 
 .portfolio-hero h1 {
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: var(--font-weight-heading);
   margin-bottom: 1rem;
 }
 
 .portfolio-hero p {
   font-size: 0.9rem;
-  font-weight: 400;
   margin-bottom: 0;
 }
 
 /* Soulignement bleu sous le sous-titre */
-.portfolio-hero p::after {
-  content: '';
-  display: block;
-  width: 30rem;
-  height: 4px;
+.hero-underline {
+  width: 400px;
+  height: 5px;
   background-color: var(--bs-primary);
-  margin: 1.5rem auto 0;
+  margin: 0 auto;
 }
 
 /* SECTION portfolio CARDS */

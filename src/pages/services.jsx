@@ -44,12 +44,13 @@ export default function Services() {
         <Container>
           <Row>
             <Col className="text-center">
-              <h1 className="display-4 fw-bold">
+              <h1 className="services-main-title mb-3">
                 Mon offre de services
               </h1>
-              <p className="lead">
+              <p className="services-subtitle text-muted mb-3">
                 Voici les prestations sur lesquelles je peux intervenir
               </p>
+              <div className="hero-underline mx-auto"></div>
             </Col>
           </Row>
         </Container>
