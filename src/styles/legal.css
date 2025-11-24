@@ -1,0 +1,145 @@
+/* HERO SECTION */
+.legal-hero {
+  background-color: #ffffff;
+  padding: 3rem 0 2rem;
+}
+
+.legal-main-title {
+  font-size: 2.5rem;
+  font-weight: var(--font-weight-heading);
+  color: var(--bs-dark);
+  margin-bottom: 1.5rem;
+}
+
+/* Blue underline - consistent with other pages */
+.hero-underline {
+  width: 400px;
+  height: 5px;
+  background-color: var(--bs-primary);
+  margin: 0 auto;
+}
+
+/* LEGAL CONTENT SECTION */
+.legal-content-section {
+  background-color: #ffffff;
+  padding: 3rem 0 5rem;
+}
+
+.legal-accordion {
+  max-width: 100%;
+}
+
+.legal-accordion-wrapper {
+  border: 1px solid #dee2e6;
+  border-radius: 0.375rem;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+/* Remove default Bootstrap accordion border */
+.legal-accordion-wrapper .accordion {
+  border: none;
+}
+
+/* LEGAL CONTENT BLOCKS */
+
+.legal-subtitle {
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-heading);
+  color: var(--bs-dark);
+  margin-bottom: 1rem;
+}
+
+.legal-info-item {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Icons */
+.legal-icon {
+  font-size: 1.125rem;
+  color: var(--bs-dark);
+  flex-shrink: 0;
+  width: 20px;
+  text-align: center;
+}
+
+/* Links */
+.legal-link {
+  color: var(--bs-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.legal-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Paragraphs in accordion body */
+.legal-accordion-body p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.legal-accordion-body p:last-child {
+  margin-bottom: 0;
+}
+
+.legal-accordion-body em {
+  font-style: italic;
+}
+
+/* RESPONSIVE - TABLET (≤ 768px) */
+@media (max-width: 768px) {
+  .legal-hero {
+    padding: 2.5rem 0 1.5rem;
+  }
+
+  .legal-main-title {
+    font-size: 2rem;
+  }
+
+  .hero-underline {
+    width: 280px;
+  }
+
+  .legal-content-section {
+    padding: 2.5rem 0 4rem;
+  }
+
+  .legal-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* RESPONSIVE - MOBILE (≤ 576px) */
+@media (max-width: 576px) {
+  .legal-hero {
+    padding: 2rem 0 1rem;
+  }
+
+  .legal-main-title {
+    font-size: 1.75rem;
+  }
+
+  .hero-underline {
+    width: 100px;
+  }
+
+  .legal-content-section {
+    padding: 2rem 0 3rem;
+  }
+
+  .legal-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .legal-info-item {
+    font-size: 0.9rem;
+  }
+
+  .legal-icon {
+    font-size: 1rem;
+  }
+}

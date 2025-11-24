@@ -82,12 +82,13 @@ export default function Portfolio() {
               <Container>
                 <Row>
                   <Col className="text-center">
-                    <h1 className="display-4 fw-bold">
+                    <h1 className="portfolio-main-title mb-3">
                       Portfolio
                     </h1>
-                    <p className="lead">
+                    <p className="portfolio-subtitle text-muted mb-3">
                       Voici quelques-unes de mes réalisations
                     </p>
+                    <div className="hero-underline mx-auto"></div>
                   </Col>
                 </Row>
               </Container>

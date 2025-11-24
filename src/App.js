@@ -1,6 +1,8 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import "../src/styles/App.css";
+
+// import de react-helmet-async pour la gestion des balises meta
+import { HelmetProvider } from "react-helmet-async";
 
 //import des pages
 import Contact from "./pages/contact";
@@ -15,20 +17,22 @@ import Navigation from "./components/navbar.js";
 
 export default function App() {
   return (
-    <div className="App d-flex flex-column min-vh-100">
-      <nav>
-        <Navigation />
-      </nav>
+    <HelmetProvider>
+      <div className="App d-flex flex-column min-vh-100">
+        <nav>
+          <Navigation />
+        </nav>
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/legal" element={<Legal />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/legal" element={<Legal />} />
+        </Routes>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </HelmetProvider>
   );
 }
