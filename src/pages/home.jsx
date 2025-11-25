@@ -17,7 +17,7 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  // Récupération des données GitHub au chargement de la page
+  // Fetch Github data when page loads
   useEffect(() => {
     const fetchGithubData = async () => {
       try {
@@ -40,17 +40,17 @@ export default function Home() {
       }
     };
 
-    // Récupération une seule fois au chargement
+    // Data fetching only once
     fetchGithubData();
-  }, []); // Tableau vide = exécution unique
+  }, []); // Empty array = one-time execution
 
-  // Gestion de la modal
+  // Modal handlers
   const handleShowModal = () => setShowModal(true);
   const handleCloseModal = () => setShowModal(false);
 
   return (
     <>
-      {/* SECTION HERO - Image plein écran avec titres centrés */}
+      {/* HERO SECTION */}
       <section className="hero-section d-flex align-items-center justify-content-center text-white">
         <Container className="mx-auto">
           <Row>
@@ -70,7 +70,7 @@ export default function Home() {
         </Container>
       </section>
 
-      {/* SECTION À PROPOS & COMPÉTENCES */}
+      {/* SECTION "À PROPOS & COMPÉTENCES" */}
       <section className="about-skills-section py-5">
         <Container className="mx-auto">
           <Row className="about-skills-box m-4 g-5">
@@ -79,14 +79,12 @@ export default function Home() {
               <div className="about-box p-0">
                 <h2 className="section-title pb-3 mb-5">A propos</h2>
 
-                {/* Photo en bloc (pas de float) */}
                 <img
                   src={photoJohnDoe}
                   alt="John Doe"
                   className="about-image mb-4"
                 />
 
-                {/* 3 paragraphes de texte */}
                 <p className="about-text">
                   Lorem ipsum dolor sit amet consectetur adipiscing elit. Optio,
                   necessitatibus consectetur tempora nostrum, ex delectus
@@ -105,12 +103,10 @@ export default function Home() {
               </div>
             </Col>
 
-            {/* COLONNE MES COMPÉTENCES */}
             <Col md={6} className="skills-responsive-margin">
               <div className="skills-box">
                 <h2 className="section-title pb-3 mb-5">Mes compétences</h2>
 
-                {/* HTML5 - 90% */}
                 <div className="skill-item">
                   <div className="skill-label mb-2">HTML5 90%</div>
                   <ProgressBar
@@ -120,7 +116,6 @@ export default function Home() {
                   />
                 </div>
 
-                {/* CSS3 - 80% */}
                 <div className="skill-item">
                   <div className="skill-label mb-2">CSS3 80%</div>
                   <ProgressBar
@@ -130,7 +125,6 @@ export default function Home() {
                   />
                 </div>
 
-                {/* JAVASCRIPT - 70% */}
                 <div className="skill-item">
                   <div className="skill-label mb-2">JAVASCRIPT 70%</div>
                   <ProgressBar
@@ -140,7 +134,6 @@ export default function Home() {
                   />
                 </div>
 
-                {/* PHP - 60% */}
                 <div className="skill-item">
                   <div className="skill-label mb-2">PHP 60%</div>
                   <ProgressBar
@@ -150,7 +143,6 @@ export default function Home() {
                   />
                 </div>
 
-                {/* REACT - 50% */}
                 <div className="skill-item">
                   <div className="skill-label mb-2">REACT 50%</div>
                   <ProgressBar
@@ -165,7 +157,7 @@ export default function Home() {
         </Container>
       </section>
 
-      {/* Ajout de la modal github */}
+      {/* Adding Github modal */}
       <GitHubModal 
         show={showModal}
         onHide={handleCloseModal}

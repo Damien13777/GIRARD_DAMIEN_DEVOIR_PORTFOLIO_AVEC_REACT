@@ -3,7 +3,7 @@ import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
 import '../styles/contact.css';
 
 export default function Contact() {
-  // États du formulaire
+  // Form state
   const [formData, setFormData] = useState({
     nom: '',
     email: '',
@@ -15,7 +15,7 @@ export default function Contact() {
   const [validated, setValidated] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
 
-  // Gestion des changements dans les champs
+  // Field change management
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({
@@ -24,7 +24,7 @@ export default function Contact() {
     }));
   };
 
-  // Soumission du formulaire
+  // Form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.currentTarget;
@@ -33,12 +33,12 @@ export default function Contact() {
       e.stopPropagation();
       setValidated(true);
     } else {
-      // Tous les champs sont valides
+      // All fields are valid - simulate form submission
       console.log('Formulaire soumis:', formData);
       setShowSuccess(true);
       setValidated(false);
       
-      // Réinitialiser le formulaire 3 secondes après l'envoi
+      // Reinitialize form after submission and 3 seconds delay
       setTimeout(() => {
         setFormData({
           nom: '',
@@ -65,19 +65,19 @@ export default function Contact() {
         </Container>
       </section>
 
-      {/* SECTION CONTENU */}
+      {/* SECTION CONTENT */}
       <section className="contact-content-section py-5">
         <Container>
           <div className="contact-main-block bg-white p-4 p-md-5 shadow">
             <Row className="g-4 g-md-5">
 
-              {/* COLONNE GAUCHE - FORMULAIRE */}
+              {/* LEFT COLUMN - FORM */}
               <Col lg={6}>
                 <h2 className="contact-block-title mb-4">
                   Formulaire de contact
                 </h2>
                 
-                {/* Message de succès */}
+                {/* Succes Message */}
                 {showSuccess && (
                   <Alert variant="success" onClose={() => setShowSuccess(false)} dismissible>
                     Votre message a été envoyé avec succès !
@@ -85,7 +85,7 @@ export default function Contact() {
                 )}
 
                 <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                  {/* Nom */}
+                  {/* Name */}
                   <Form.Group className="mb-3" controlId="formNom">
                     <Form.Control
                       type="text"
@@ -117,7 +117,7 @@ export default function Contact() {
                     </Form.Control.Feedback>
                   </Form.Group>
 
-                  {/* Téléphone */}
+                  {/* Phone */}
                   <Form.Group className="mb-3" controlId="formTelephone">
                     <Form.Control
                       type="tel"
@@ -134,7 +134,7 @@ export default function Contact() {
                     </Form.Control.Feedback>
                   </Form.Group>
 
-                  {/* Sujet */}
+                  {/* Subject */}
                   <Form.Group className="mb-3" controlId="formSujet">
                     <Form.Control
                       type="text"
@@ -167,7 +167,7 @@ export default function Contact() {
                     </Form.Control.Feedback>
                   </Form.Group>
 
-                  {/* Bouton Envoyer */}
+                  {/* Submit btn */}
                   <Button 
                     variant="primary" 
                     type="submit" 
@@ -178,7 +178,7 @@ export default function Contact() {
                 </Form>
               </Col>
 
-              {/* COLONNE DROITE - COORDONNÉES + MAP */}
+              {/* RIGHT COLUMN - ADRESS + MAP */}
               <Col lg={6}>
                 <h2 className="contact-block-title mb-4">
                   Mes coordonnées

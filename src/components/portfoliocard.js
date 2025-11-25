@@ -19,7 +19,7 @@ export default function PortfolioCard({
       />
 
       <Card.Body className="d-flex flex-column">
-        {/* Titre du projet */}
+        {/* Project's title */}
         <Card.Title className="portfolio-card-title mb-3">{title}</Card.Title>
 
         {/* Description */}
@@ -27,7 +27,7 @@ export default function PortfolioCard({
           {description}
         </Card.Text>
 
-        {/* Bouton "Voir le site" */}
+        {/* "See website" link */}
         <Button
           variant="primary"
           href={link}
@@ -39,7 +39,7 @@ export default function PortfolioCard({
         </Button>
       </Card.Body>
 
-      {/* footer de la card */}
+      {/* Card's footer */}
       <Card.Footer className="portfolio-card-footer text-muted">
         {technologies}
       </Card.Footer>

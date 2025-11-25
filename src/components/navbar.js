@@ -11,7 +11,7 @@ export default function Navigation() {
         JOHN DOE
       </Navbar.Brand>
 
-      {/*Toggle pour le menu responsive*/}
+      {/*Toggle for responsive menu (hamburger)*/}
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="me-5" />
 
       <Navbar.Collapse id="basic-navbar-nav" className="ps-5">

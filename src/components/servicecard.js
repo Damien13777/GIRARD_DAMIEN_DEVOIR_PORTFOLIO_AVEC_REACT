@@ -6,12 +6,12 @@ export default function ServiceCard({ icon, title, description }) {
   return (
     <Card className="service-card h-100">
       <Card.Body className="d-flex flex-column align-items-center text-center p-3">
-        {/* Icône */}
+        {/* Icon */}
         <div className="service-icon mb-3">
           <i className={`bi ${icon}`}></i>
         </div>
 
-        {/* Titre */}
+        {/* Title */}
         <Card.Title className="service-title mb-3">{title}</Card.Title>
 
         {/* Description */}
