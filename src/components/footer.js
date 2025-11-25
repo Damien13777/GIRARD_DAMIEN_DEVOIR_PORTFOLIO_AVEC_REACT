@@ -9,7 +9,7 @@ export default function Footer() {
     <footer className="bg-dark text-light py-5">
       <Container className="footer-container">
         <Row>
-          {/* Colonne 1 : Informations personnelles + Réseaux sociaux */}
+          {/* Column 1: personnal info + social network */}
           <Col md={4} className="mb-4 mb-md-0">
             <h5 className="text-white mb-2">John Doe</h5>
             <address className="mb-3">
@@ -19,7 +19,7 @@ export default function Footer() {
               <p className="mb-3">john.doe@gmail.com</p>
             </address>
 
-            {/* Icônes réseaux sociaux */}
+            {/* Social ntworks icons */}
             <div className="social-icons d-flex gap-2">
               <a
                 href="https://github.com/github-john-doe"
@@ -51,7 +51,7 @@ export default function Footer() {
             </div>
           </Col>
 
-          {/* Colonne 2 : Liens utiles */}
+          {/* Column 2 : links */}
           <Col md={4} className="mb-4 mb-md-0">
             <h5 className="text-white mb-2">Liens utiles</h5>
             <ul className="list-unstyled">
@@ -95,7 +95,7 @@ export default function Footer() {
             </ul>
           </Col>
 
-          {/* Colonne 3 : Mes dernières réalisations */}
+          {/* Column 3 : my last creations */}
           <Col md={4}>
             <h5 className="text-white mb-2">Mes dernières réalisations</h5>
             <ul className="list-unstyled">
@@ -116,12 +116,14 @@ export default function Footer() {
                 </NavLink>
               </li>
               <li>
-                <NavLink
-                  to="/portfolio"
+                <a
+                  href="https://clochette-nails.fr"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="footer-link text-decoration-none"
                 >
-                  Espace bien-être
-                </NavLink>
+                  Site Clochette Nails
+                </a>
               </li>
               <li>
                 <NavLink
