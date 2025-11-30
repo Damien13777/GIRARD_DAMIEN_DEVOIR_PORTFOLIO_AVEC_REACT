@@ -67,7 +67,7 @@
     color: var(--bs-dark);
   }
   
-  /* États de validation */
+  /* Validation State */
   .was-validated .form-control:invalid {
     border-color: var(--bs-danger);
   }
@@ -76,7 +76,7 @@
     border-color: var(--bs-success);
   }
   
-  /* Bouton Envoyer */
+  /* Submit button */
   .contact-submit-btn {
     background-color: var(--bs-primary);
     border: none;
@@ -114,7 +114,7 @@
     text-align: center;
   }
   
-  /* Lien email */
+  /* Email link */
   .contact-info-link {
     font-size: 0.95rem;
     color: var(--bs-dark);

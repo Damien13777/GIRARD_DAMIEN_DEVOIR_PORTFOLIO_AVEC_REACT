@@ -5,7 +5,7 @@ import "../styles/services.css";
 import bannerImage from "../assets/banner.jpg";
 
 export default function Services() {
-  // Données des services
+  // Services data
   const services = [
     {
       id: 1,
@@ -39,7 +39,7 @@ export default function Services() {
         </Container>
       </section>
       
-      {/* SECTION HERO */}
+      {/* HERO SECTION */}
       <section className="services-hero d-flex align-items-center justify-content-center">
         <Container>
           <Row>
@@ -56,7 +56,7 @@ export default function Services() {
         </Container>
       </section>
 
-      {/* SECTION SERVICES CARDS */}
+      {/* SERVICES CARDS SECTION */}
       <section className="services-section pb-5 pt-0 bg-white">
         <Container>
           <Row className="g-4">

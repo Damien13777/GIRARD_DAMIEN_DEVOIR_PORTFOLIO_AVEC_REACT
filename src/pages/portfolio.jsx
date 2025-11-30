@@ -13,7 +13,7 @@ import bannerImage from "../assets/banner.jpg";
 
 
 export default function Portfolio() {
-  // Données des projets
+  // Projects data
   const projects = [
     {
       id: 1,
@@ -67,7 +67,7 @@ export default function Portfolio() {
 
   return (
     <>
-      {/* SECTION HERO */}
+      {/* HERO SECTION */}
       <section className="services-banner">
         <Container fluid className="p-0">
           <img 
@@ -95,7 +95,7 @@ export default function Portfolio() {
             </section>
 
 
-      {/* SECTION PORTFOLIO CARDS */}
+      {/* PORTFOLIO CARDS SECTION */}
       <section className="portfolio-section pb-5 pt-0 bg-white">
         <Container>
           <Row className="g-4">

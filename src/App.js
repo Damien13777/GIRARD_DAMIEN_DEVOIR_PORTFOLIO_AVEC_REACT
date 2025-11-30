@@ -1,17 +1,17 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 
-// import de react-helmet-async pour la gestion des balises meta
+// Import of react-helmet-async for managing meta tags
 import { HelmetProvider } from "react-helmet-async";
 
-//import des pages
+//Pages import
 import Contact from "./pages/contact";
 import Home from "./pages/home";
 import Legal from "./pages/legal";
 import Portfolio from "./pages/portfolio";
 import Services from "./pages/services";
 
-//import des components
+//components import
 import Footer from "./components/footer.js";
 import Navigation from "./components/navbar.js";
 
