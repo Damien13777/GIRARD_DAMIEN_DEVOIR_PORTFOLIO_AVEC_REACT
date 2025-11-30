@@ -1,17 +1,19 @@
 import React, { useState, useEffect } from "react";
-import {
-  Container,
-  Row,
-  Col,
-  Button,
-  ProgressBar,
-} from "react-bootstrap";
+import { useSEO } from "../hooks/useSEO.js";
+import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
 import "../styles/home.css";
 import photoJohnDoe from "../assets/john-doe-about.jpg";
-import GitHubModal from '../components/modal.js';
+import GitHubModal from "../components/modal.js";
 
 export default function Home() {
-  // État pour la modal GitHub
+
+  // SEO setup by calling custom hook
+  useSEO(
+    'John Doe - Développeur web | Accueil',
+    'Présentation de John Doe, développeur web spécialisé en React et JavaScript. Découvrez mes projets et compétences.'
+  );
+
+  // Github modal state and data
   const [showModal, setShowModal] = useState(false);
   const [githubData, setGithubData] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -48,8 +50,10 @@ export default function Home() {
   const handleShowModal = () => setShowModal(true);
   const handleCloseModal = () => setShowModal(false);
 
+
   return (
     <>
+
       {/* HERO SECTION */}
       <section className="hero-section d-flex align-items-center justify-content-center text-white">
         <Container className="mx-auto">
@@ -158,7 +162,7 @@ export default function Home() {
       </section>
 
       {/* Adding Github modal */}
-      <GitHubModal 
+      <GitHubModal
         show={showModal}
         onHide={handleCloseModal}
         githubData={githubData}

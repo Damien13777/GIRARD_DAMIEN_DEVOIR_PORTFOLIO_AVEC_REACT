@@ -1,18 +1,40 @@
 import React from "react";
 import { Container, Accordion } from "react-bootstrap";
-import { Helmet } from "react-helmet-async";
+import { useSEO } from "../hooks/useSEO.js";
 import LegalAccordion from "../components/legalaccordion";
 import "../styles/legal.css";
 
 export default function Legal() {
+
+  // SEO setup by calling custom hook
+  useSEO(
+    'Mentions légales - John Doe',
+    'Mentions légales, crédits et informations légales du site.'
+  );
+
+  // Prevent indexing of this page by search engines
+  React.useEffect(() => {
+    let metaRobots = document.querySelector('meta[name="robots"]');
+    
+    if (!metaRobots) {
+      metaRobots = document.createElement('meta');
+      metaRobots.name = 'robots';
+      document.head.appendChild(metaRobots);
+    }
+    
+    metaRobots.content = 'noindex, nofollow';
+
+    // Cleanup function to reset robots meta tag when component unmounts
+    return () => {
+      if (metaRobots) {
+        metaRobots.content = 'index, follow';
+      }
+    };
+  }, []);
+
+  
   return (
     <>
-      {/* SEO - Prevent search engine indexing */}
-      <Helmet>
-        <title>Mentions légales - John Doe</title>
-        <meta name="robots" content="noindex, nofollow" />
-        <meta name="description" content="Mentions légales du site John Doe" />
-      </Helmet>
 
       {/* HERO SECTION */}
       <section className="legal-hero text-center py-5">
