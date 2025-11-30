@@ -38,7 +38,7 @@ export default function GitHubModal({
           </div>
         ) : githubData ? (
           <Row className="g-0 h-100">
-            {/* COLONNE GAUCHE */}
+            {/* LEFT COLUMN */}
             <Col
               md={6}
               className="d-flex align-items-center justify-content-center p-4"
@@ -51,12 +51,12 @@ export default function GitHubModal({
               />
             </Col>
 
-            {/* COLONNE DROITE */}
+            {/* RIGHT COLUMN */}
             <Col
               md={6}
               className="p-4 d-flex flex-column justify-content-center"
             >
-              {/* Nom avec icône */}
+              {/* Name + icon */}
               <div className="underline-content pb-2 mb-2 d-flex align-items-start">
                 <i className="bi bi-person me-3"></i>
                 <a
@@ -69,7 +69,7 @@ export default function GitHubModal({
                 </a>
               </div>
 
-              {/* Localisation */}
+              {/* Local */}
               <div className="underline-content pb-2 mb-2 d-flex align-items-start">
                 <i className="bi bi-geo-alt me-3"></i>
                 <span className="text-white">{githubData.location || ""}</span>

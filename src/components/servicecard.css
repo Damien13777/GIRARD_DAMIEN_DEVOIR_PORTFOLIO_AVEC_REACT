@@ -6,14 +6,14 @@
     box-shadow: none;
   }
   
-  /* EFFET HOVER - Fond #efefef + ombre */
+  /* Hover effect - Background #efefef + Shadow */
   .service-card:hover {
     background-color: #efefef;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     transform: translateY(-2px);
   }
   
-  /* Icône bleue */
+  /* Blue icon */
   .service-icon {
     width: 80px;
     height: 80px;
@@ -28,7 +28,7 @@
     color: var(--bs-primary);
   }
   
-  /* Titre de la card */
+  /* Card's title */
   .service-title {
     font-size: 1.5rem;
     font-weight: 600;

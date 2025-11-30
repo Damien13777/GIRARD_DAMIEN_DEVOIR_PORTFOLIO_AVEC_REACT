@@ -1,10 +1,10 @@
-/* Container de la modal */
+/* Modal container */
 .github-modal-content {
   border: 1px solid var(--bs-secondary);
   border-radius: 0.5rem;
 }
 
-/* HEADER - Fond gris-bleu foncé */
+/* HEADER */
 .github-modal-header {
   padding: 1.25rem 1.5rem;
   border-bottom: 1px solid var(--bs-secondary);
@@ -17,7 +17,7 @@
   margin: 0;
 }
 
-/* Bouton de fermeture X blanc */
+/* Close button white */
 .github-modal-header .btn-close {
   filter: invert(1) brightness(2);
   opacity: 0.8;
@@ -33,9 +33,9 @@
   min-height: 400px;
 }
 
-/* Lien nom en bleu GitHub souligné */
+/* link color + underline and hover effect */
 .github-link {
-  color: #58a6ff;
+  color: var(--bs-primary);
   text-decoration: underline;
   font-size: 1rem;
   transition: color 0.2s;
@@ -45,13 +45,13 @@
   color: #79c0ff;
 }
 
-/* Icônes */
+/* Icons */
 .github-modal-body .bi {
   color: var(--bs-light);
   flex-shrink: 0;
 }
 
-/* Texte blanc */
+/* white text */
 .github-modal-body .text-white {
   color: var(--bs-light) !important;
   font-size: 0.95rem;
@@ -64,7 +64,7 @@
   justify-content: flex-end;
 }
 
-/* Bouton Fermer */
+/* Close button */
 .github-close-btn {
   background-color: #525964;
   border: none;
@@ -88,7 +88,7 @@
   box-shadow: none;
 }
 
-/* Avatar - Taille maximale */
+/* Avatar - full size */
 .github-modal-body img {
   max-width: 100%;
   height: auto;
@@ -111,7 +111,7 @@
   }
 }
 
-/* Hauteur minimale pour centrage vertical */
+/* Min height for middle position */
 .github-modal-body .row {
   min-height: 400px;
 }

@@ -1,15 +1,12 @@
-/* ===================================
-   SECTION HERO - Image plein écran
-   =================================== */
 .hero-section {
-  /* Image de fond avec overlay comme dans la maquette */
+  /* Background picture w/ overlay */
   background: linear-gradient(rgba(100, 100, 100, 0.3), rgba(100, 100, 100, 0.5)),
     url("../assets/hero-bg.jpg") center/cover no-repeat;
   min-height: 170vh;
   position: relative;
 }
 
-/* Titres Hero */
+/* Hero titles */
 .hero-section h1 {
   font-size: 6rem;
   font-weight: var(--font-weight-heading);
@@ -21,7 +18,7 @@
   color: rgba(255, 255, 255, 0.9);
 }
 
-/* Bouton Hero avec effet hover */
+/* Hero section button w/ hover effect */
 .btn-hero {
   border-radius: 0.375rem;
   transition: all 0.3s ease;
@@ -31,10 +28,10 @@
 .btn-hero:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  filter: brightness(0.9); /* S'assombrit au survol comme demandé */
+  filter: brightness(0.9); 
 }
 
-/* SECTION À PROPOS ET COMPÉTENCES */
+/* SECTION "À PROPOS ET COMPÉTENCES" */
 .about-section {
   background-color: var(--bs-light);
 }
@@ -46,7 +43,7 @@
   padding-bottom: 0.75rem;
 }
 
-/* Soulignement bleu sous les titres comme dans la maquette */
+/* Subtitles with underline color blue */
 
 .section-title {
   border-bottom: solid 3px var(--bs-primary);
@@ -64,7 +61,7 @@
   margin-bottom: 2rem;
 }
 
-/* PROGRESS BARS PERSONNALISÉES */
+/* PROGRESS BARS */
 .custom-progress {
   height: 1.25rem;
   border-radius: 0.5rem;
@@ -79,7 +76,7 @@
   font-size: 0.95rem;
 }
 
-/* Respondive */
+/* Responsive */
 @media (max-width: 768px) {
   .hero-section {
     min-height: 80vh;

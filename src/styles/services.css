@@ -13,7 +13,7 @@
     margin-bottom: 0;
   }
   
-  /* Soulignement bleu sous le sous-titre */
+  /* Subtitle with blue underline */
   .hero-underline {
     width: 400px;
     height: 5px;
@@ -21,13 +21,13 @@
     margin: 0 auto;
   }
   
-  /* SECTION SERVICES CARDS */
+  /* Service cards section */
   .services-section {
     padding: 4rem 0;
     background-color: #ffffff;
   }
   
-  /* ZONE IMAGE BANNIÈRE */
+  /* Banner image zone */
   .services-banner {
     width: 100%;
     background-color: #f8f9fa;
@@ -83,7 +83,7 @@
       padding: 2rem 0;
     }
     
-    /* Cards empilées verticalement sur mobile */
+    /* Cards stacked vertically on mobile */
     .services-section .col-sm-12 {
       margin-bottom: 1.5rem;
     }
