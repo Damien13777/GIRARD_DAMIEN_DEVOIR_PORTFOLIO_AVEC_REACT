@@ -1,70 +1,155 @@
-# Getting Started with Create React App
+# Portfolio - John Doe
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Portfolio professionnel de John Doe, développeur web créatif et passionné.
 
-## Available Scripts
+## 📋 Description du projet
 
-In the project directory, you can run:
+Ce projet est un **portfolio personnel** présentant les compétences, services et réalisations en développement web. 
 
-### `npm start`
+Le site a été construit avec **React** et optimisé pour le **SEO** et l'**accessibilité**.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Pages principales :
+- **Accueil** : Présentation et compétences
+- **Services** : Description des services proposés (UX Design, Développement Web, Référencement)
+- **Portfolio** : Galerie des derniers projets réalisés
+- **Contact** : Formulaire de contact et localisation
+- **Mentions Légales** : Informations légales et crédits
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Prérequis
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Avant de commencer, assurez-vous d'avoir installé :
 
-### `npm run build`
+- **Node.js** (version 14.0 ou supérieure) : [Télécharger Node.js](https://nodejs.org/)
+- **npm** (généralement installé avec Node.js)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Vérifier l'installation :
+node --version
+npm --version
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+text
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 📦 Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 1. Cloner le projet
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+git clone <URL_DU_DEPOT>
+cd devoir_portfolio_avec_react
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 2. Installer les dépendances
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+npm install
 
-## Learn More
+Cela va installer toutes les dépendances listées dans `package.json` :
+- React
+- React Router DOM
+- Bootstrap
+- Et autres dépendances du projet
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🚀 Lancement du projet
 
-### Code Splitting
+### Démarrer le serveur de développement
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+npm start
 
-### Analyzing the Bundle Size
+Le projet s'ouvrira automatiquement dans votre navigateur à l'adresse :
+http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+La page se rechargera automatiquement quand vous modifiez les fichiers.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## ⚙️ Technologies utilisées
 
-### Advanced Configuration
+- **React 19.2.0** : Bibliothèque JavaScript pour construire l'interface utilisateur
+- **React Router DOM** : Gestion de la navigation et du routage
+- **Bootstrap 5** : Framework CSS pour le design responsive
+- **CSS3** : Stylisation personnalisée
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 🎨 Fonctionnalités principales
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+✅ **Design Responsive** : Compatible sur desktop, tablette et mobile
+✅ **SEO Optimisé** : Meta tags, titres uniques par page, robot.txt
+✅ **Accessibilité** : HTML validé W3C, contraste suffisant, navigation au clavier
+✅ **Performance** : Optimisation des images et du code
+✅ **Navigation Fluide** : Routing avec React Router
+✅ **Composants Réutilisables** : Architecture modulaire et maintenable
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🔍 Validation et Tests
+
+### Validation W3C
+
+Validation du projet :
+
+- Le projet a été validé page par page sur [W3C Validator](https://validator.w3.org/)
+
+### Vérification SEO
+
+- Chaque page a un titre unique et une meta description
+- La page "Mentions légales" est marquée comme `noindex`
+- Le fichier `robots.txt` est présent
+- Les images ont des alt text descriptifs
+
+---
+
+## 📝 Variables d'environnement (optionnel)
+
+Créez un fichier `.env` à la racine du projet si nécessaire :
+
+REACT_APP_API_URL=http://localhost:3000
+
+---
+
+## 🛑 Arrêter l'application
+
+Pour arrêter le serveur de développement, appuyez sur :
+Ctrl + C
+
+---
+
+## 📚 Documentation supplémentaire
+
+- [Documentation React](https://react.dev/)
+- [Documentation React Router](https://reactrouter.com/)
+- [Documentation Bootstrap](https://getbootstrap.com/)
+- [Guide SEO](https://developers.google.com/search/docs)
+
+---
+
+## Checklist avant soumission
+
+- [ ] Tous les fichiers sont présents
+- [ ] `npm install` fonctionne sans erreurs
+- [ ] `npm start` lance l'application
+- [ ] Toutes les pages sont accessibles
+- [ ] Le W3C valide le HTML (pas d'erreurs critiques)
+- [ ] Le SEO est optimisé (meta tags, robot.txt)
+- [ ] Les images ont des alt text
+- [ ] Le design est responsive
+
+---
+
+## 📧 Contact
+
+Pour toute question sur ce projet, veuillez contacter : john.doe@gmail.com
+
+---
+
+## 📄 Licence
+
+Ce projet est un devoir scolaire pour le BTS.
+
+---
+
+**Créé par** : John Doe  
+**Date** : November 2025  
+**École** : Centre Européen de formation
